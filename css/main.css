@@ -1,11 +1,20 @@
-.landing {
-  border: 2px;
-  border-radius: 20%;
-  padding: 1em;
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+body {
+  padding: 0;
+  font-family: 'DM Serif Display', serif;
 }
 
-.landing .logo {
+a {
+  font-family: 'DM Serif Display', serif;
   text-decoration: none;
-  font-weight: bold;
+  color: black;
+}
+
+.logo {
+  color: black;
+}
+
+.first-nav {
+  padding: 2em;
 }
 /*# sourceMappingURL=main.css.map */
