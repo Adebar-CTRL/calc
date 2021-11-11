@@ -1,0 +1,11 @@
+.landing {
+  border: 2px;
+  border-radius: 20%;
+  padding: 1em;
+}
+
+.landing .logo {
+  text-decoration: none;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
