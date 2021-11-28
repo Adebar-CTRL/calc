@@ -3,17 +3,45 @@
 body {
      padding: 0;
      font-family: 'DM Serif Display', serif;
+     background-color: black;
 }
 
 a {
     font-family: 'DM Serif Display', serif;
     text-decoration: none;
-    color:black}
-
+    color:rgb(255, 255, 255);
+}
 .logo {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 
+.homebtn {
+    background-color : transparent;
+    border: 0px;
+
+}
+
+.btn {
+    transition: all .5s ease;
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 15px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+        a {
+            color: black;
+        }
+}
 
 .first-nav {
     padding: 2em;
