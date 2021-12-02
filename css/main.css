@@ -11,13 +11,16 @@ a {
   color: white;
 }
 
-.logo {
-  color: white;
-}
-
 .homebtn {
   background-color: transparent;
   border: 0px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homebtn .logo {
+  width: 30%;
 }
 
 .btn {
@@ -41,10 +44,54 @@ a {
 }
 
 .btn:hover a {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   color: black;
 }
 
 .first-nav {
-  padding: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  height: 90vh;
+}
+
+.topcontainer {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  background-image: url("../images/nature.jpg");
+}
+
+.bottomcontainer {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  background-image: url("../images/wood.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+  .topcontainer {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .bottomcontainer {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .first-nav {
+    height: 80vh;
+  }
+  .btn {
+    position: absolute;
+    top: 45%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,16 +11,21 @@ a {
     text-decoration: none;
     color:rgb(255, 255, 255);
 }
-.logo {
-    color:rgb(255, 255, 255);
-}
 
+// setting up logo
 .homebtn {
     background-color : transparent;
     border: 0px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 
+    .logo {
+        width: 30%;
+    }
 }
 
+//navigation buttons
 .btn {
     transition: all .5s ease;
     color: rgb(255, 255, 255);
@@ -33,16 +38,54 @@ a {
     padding: 15px;
     outline: none;
     border-radius: 4px;
+
 }
 
 .btn:hover {
     color: #000000;
     background-color: rgb(255, 255, 255);
         a {
+            transition: all .5s ease;
             color: black;
         }
 }
 
+// Formatting the navigationbar
 .first-nav {
-    padding: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center;
+    height: 90vh;
+}
+
+.topcontainer {
+    flex: 100%;
+    background-image: url('../images/nature.jpg');
+}
+
+.bottomcontainer {
+    flex: 100%;
+    background-image: url('../images/wood.jpg');
+}
+
+@media only screen and (min-width: 768px) {
+    .topcontainer {
+        flex: 50%;
+    }
+
+    .bottomcontainer {
+        flex: 50%;
+    }
+
+    .first-nav {
+        height: 80vh;
+    }
+    
+    .btn {
+        position: absolute;
+        top: 45%;
+        right: ;
+    }
 }
